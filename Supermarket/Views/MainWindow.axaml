@@ -1,0 +1,38 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Supermarket.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080 "
+        x:Class="Supermarket.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        x:CompileBindings="False"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Supermarket">
+
+
+    <Grid ColumnDefinitions=".1* .2* .1*" RowDefinitions=".1* .3* .1*" ShowGridLines="False">
+        <TextBlock Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5" FontSize="50" >Каталог</TextBlock>
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <ListBox x:Name="TovarListBox" Background="Transparent" BorderThickness="1">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border>
+                            <StackPanel Orientation="Horizontal">
+                                <StackPanel>
+                                    <Image Width="100" Height="100" Source="{Binding TovarImage}"></Image>
+                                </StackPanel>
+                                <StackPanel VerticalAlignment="Center">
+                                    <TextBlock Text="{Binding TovarName}" Margin="5"/>
+                                    <TextBlock Text="{Binding TovarCount, StringFormat='Количество на складе: {0}'}" Margin="5"/>
+                                    <TextBlock TextDecorations="" Text="{Binding TovarPrice, StringFormat='Цена: {0}₽'}" Margin="5"/>
+                                </StackPanel>
+                                
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</Window>
