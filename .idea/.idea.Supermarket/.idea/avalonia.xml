@@ -3,6 +3,7 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="Supermarket/Views/AddProduct.axaml" value="Supermarket/Supermarket.csproj" />
         <entry key="Supermarket/Views/MainWindow.axaml" value="Supermarket/Supermarket.csproj" />
       </map>
     </option>

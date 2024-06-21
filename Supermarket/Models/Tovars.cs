@@ -4,7 +4,7 @@ using Avalonia.Media.Imaging;
 
 namespace Supermarket.Models;
 
-public class Tovars
+public class Tovars 
 {
     public string TovarName { get; set; }
     public double TovarPrice { get; set; }
@@ -19,11 +19,11 @@ public class TovarList
     {
         new Tovars
         {
-            TovarName = "Гвоздь", TovarPrice = 14, TovarImage = new Bitmap("C:\\Users\\PROFI\\RiderProjects\\Supermarket\\Supermarket\\Assets\\avalonia-logo.ico"), TovarCount = 5
+            TovarName = "Гвоздьё", TovarDescription = "Супер крутой гвоздь",TovarPrice = 14, TovarImage = new Bitmap("C:\\Users\\prdb\\RiderProjects\\supermarket\\Supermarket\\Assets\\avalonia-logo.ico"), TovarCount = 5
         },
         new Tovars
         {
-            TovarName = "Гвоздь", TovarPrice = 14, TovarImage = new Bitmap("C:\\Users\\PROFI\\RiderProjects\\Supermarket\\Supermarket\\Assets\\avalonia-logo.ico"), TovarCount = 5
+            TovarName = "Гвоздь", TovarDescription = "Супер крутой гвоздь поменьше", TovarPrice = 14, TovarImage = new Bitmap("C:\\Users\\prdb\\RiderProjects\\supermarket\\Supermarket\\Assets\\avalonia-logo.ico"), TovarCount = 5
         }
     };
 }

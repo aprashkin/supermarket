@@ -1,0 +1,23 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Supermarket.Views.AddProduct"
+        Title="AddProduct">
+    <StackPanel HorizontalAlignment="Center" Spacing="5">
+        <TextBlock Text="Продукты:" />
+        <TextBox Watermark="Название:" Name="TovarNameBox" />
+        <TextBox Watermark="Цена:" Name="TovarPriceBox" />
+        <TextBox Watermark="Количество:" Name="TovarCountBox" />
+        <TextBox Watermark="Описание:" Name="TovarDescriptionBox" />
+        
+        <Button Width="200" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Content="не жмать"
+                 Background="Blue" />
+        
+        <Button Width="120" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Content="Создать товар"
+                Click="addiing" Background="Green" />
+        
+        <TextBlock Name="Error" Foreground="Red" />
+    </StackPanel>
+</Window>
