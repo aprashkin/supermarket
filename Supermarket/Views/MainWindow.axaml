@@ -18,7 +18,7 @@
             <Button VerticalAlignment="Top" Background="Red" HorizontalAlignment="Center" BorderBrush="Black" Click="delete_tovar" FontSize="20" Content="Удалить товар"/>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="1">
-            <ListBox x:Name="TovarListBox" Background="Transparent" SelectedItem="{Binding selectedItem}" SelectionMode="Single" BorderThickness="1">
+            <ListBox x:Name="TovarListBox" Background="Transparent" DoubleTapped="TovarListBox_OnDoubleTapped" SelectedItem="{Binding selectedItem}" SelectionMode="Single" BorderThickness="1">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <Border>
