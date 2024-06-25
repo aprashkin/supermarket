@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
 using System.Reflection;
 using Avalonia.Media.Imaging;
 
@@ -11,6 +12,13 @@ public class Tovars
     public int TovarCount { get; set; } 
     public Bitmap TovarImage { get; set; }
     public string TovarDescription { get; set; }
+    
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    protected virtual void OnPropertyChanged(string propertyName)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
 }
 
 public class TovarList

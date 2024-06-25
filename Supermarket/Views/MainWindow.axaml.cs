@@ -11,6 +11,7 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        DataContext = new MainWindowViewModel();
         TovarListBox.ItemsSource = TovarList.tovarsList;
     }
 
@@ -21,10 +22,16 @@ public partial class MainWindow : Window
         Close();
     }
 
-    private void delete_tovar(object? sender, RoutedEventArgs e)
+    private void delete_tovar(object sender, RoutedEventArgs e)
     {
-        var _selected_item = TovarListBox.SelectedItems.OfType<Tovars>().ToList();
-        
-        
+        var selectedItem = TovarListBox.SelectedItem as Tovars;
+
+        if (selectedItem != null)
+        {
+            // Удаление товара из коллекции
+            TovarList.tovarsList.Remove(selectedItem);
+            TovarListBox.ItemsSource = null;
+            TovarListBox.ItemsSource = TovarList.tovarsList;
+        }
     }
 }

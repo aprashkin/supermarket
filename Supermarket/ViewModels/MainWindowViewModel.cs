@@ -1,8 +1,14 @@
-﻿namespace Supermarket.ViewModels;
+﻿using System.Collections.ObjectModel;
+using Supermarket.Models;
+
+namespace Supermarket.ViewModels;
 
 public class MainWindowViewModel : ViewModelBase
 {
-#pragma warning disable CA1822 // Mark members as static
-    public string Greeting => "Welcome to Avalonia!";
-#pragma warning restore CA1822 // Mark members as static
+    public ObservableCollection<Tovars> TovarsList { get; set; } = new ObservableCollection<Tovars>();
+
+    public MainWindowViewModel()
+    {
+        TovarsList = new ObservableCollection<Tovars>();
+    }
 }
