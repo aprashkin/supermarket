@@ -27,11 +27,11 @@ public class TovarList
     {
         new Tovars
         {
-            TovarName = "Гвоздьё", TovarDescription = "Супер крутой гвоздь",TovarPrice = 14, TovarImage = new Bitmap("C:\\Users\\prdb\\RiderProjects\\supermarket\\Supermarket\\Assets\\avalonia-logo.ico"), TovarCount = 5
+            TovarName = "Гвоздьё", TovarDescription = "Супер крутой гвоздь",TovarPrice = 14, TovarImage = new Bitmap("C:\\Users\\kristy\\RiderProjects\\supermarket\\Supermarket\\Assets\\avalonia-logo.ico"), TovarCount = 5
         },
         new Tovars
         {
-            TovarName = "Гвоздь", TovarDescription = "Супер крутой гвоздь поменьше", TovarPrice = 14, TovarImage = new Bitmap("C:\\Users\\prdb\\RiderProjects\\supermarket\\Supermarket\\Assets\\avalonia-logo.ico"), TovarCount = 5
+            TovarName = "Гвоздь", TovarDescription = "Супер крутой гвоздь поменьше", TovarPrice = 14, TovarImage = new Bitmap("C:\\Users\\kristy\\RiderProjects\\supermarket\\Supermarket\\Assets\\avalonia-logo.ico"), TovarCount = 5
         }
     };
 }

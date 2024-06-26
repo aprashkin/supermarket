@@ -32,18 +32,28 @@ public partial class MainWindow : Window
         {
             // Удаление товара из коллекции
             TovarList.tovarsList.Remove(selectedItem);
-            TovarListBox.ItemsSource = null;
-            TovarListBox.ItemsSource = TovarList.tovarsList;
+            UpdateList();
         }
     }
 
     private void TovarListBox_OnDoubleTapped(object? sender, TappedEventArgs e)
     {
-        var listBoxItem = (ListBoxItem)sender;
-        var selectedTovar = (Tovars)listBoxItem.Content;
+        // Проверяем, что sender приведен к типу ListBox
+        var listBox = sender as ListBox;
 
-        // Создание нового окна для редактирования товара
-        var editWindow = new EditTovarWindow(selectedTovar);
-        editWindow.Show();
+        // Если приведение удалось и выбранный элемент существует
+        if (listBox != null && listBox.SelectedItem is Tovars selectedTovar)
+        {
+            // Создаем новое окно для редактирования товара
+            var editWindow = new EditTovarWindow(selectedTovar);
+            editWindow.Show();
+        }
     }
+
+    private void UpdateList()
+    {
+        TovarListBox.ItemsSource = null;
+        TovarListBox.ItemsSource = TovarList.tovarsList;
+    }
+    
 }
