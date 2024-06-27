@@ -13,18 +13,18 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Supermarket
-build_property.ProjectDir = C:\Users\kristy\RiderProjects\supermarket\Supermarket\
+build_property.ProjectDir = C:\Users\prdb\RiderProjects\supermarket\Supermarket\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/kristy/RiderProjects/supermarket/Supermarket/App.axaml]
+[C:/Users/prdb/RiderProjects/supermarket/Supermarket/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/kristy/RiderProjects/supermarket/Supermarket/Views/AddProduct.axaml]
+[C:/Users/prdb/RiderProjects/supermarket/Supermarket/Views/AddProduct.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/kristy/RiderProjects/supermarket/Supermarket/Views/EditTovarWindow.axaml]
+[C:/Users/prdb/RiderProjects/supermarket/Supermarket/Views/EditTovarWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/kristy/RiderProjects/supermarket/Supermarket/Views/MainWindow.axaml]
+[C:/Users/prdb/RiderProjects/supermarket/Supermarket/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
