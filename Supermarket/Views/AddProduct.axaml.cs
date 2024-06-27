@@ -52,7 +52,7 @@ public partial class AddProduct : Window
             TovarDescription = TovarDescriptionBox.Text,
             TovarCount = count,
             TovarPrice = price,
-            TovarImage = new Bitmap("C:\\Users\\prdb\\RiderProjects\\supermarket\\Supermarket\\Assets\\images.jpg")
+            TovarImage = new Bitmap("C:\\Users\\kristy\\RiderProjects\\supermarket\\Supermarket\\Assets\\avalonia-logo.ico")
         };
         
         TovarList.tovarsList.Add(newTovar);
