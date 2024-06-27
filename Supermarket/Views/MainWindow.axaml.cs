@@ -30,7 +30,6 @@ public partial class MainWindow : Window
 
         if (selectedItem != null)
         {
-            // Удаление товара из коллекции
             TovarList.tovarsList.Remove(selectedItem);
             TovarListBox.ItemsSource = null;
             TovarListBox.ItemsSource = TovarList.tovarsList;
@@ -39,10 +38,8 @@ public partial class MainWindow : Window
 
     private void TovarListBox_OnDoubleTapped(object? sender, TappedEventArgs e)
     {
-        var listBoxItem = (ListBoxItem)sender;
-        var selectedTovar = (Tovars)listBoxItem.Content;
-
-        // Создание нового окна для редактирования товара
+        var listBoxItem = (StackPanel)sender;
+        var selectedTovar = (int)listBoxItem.Tag;
         var editWindow = new EditTovarWindow(selectedTovar);
         editWindow.Show();
     }

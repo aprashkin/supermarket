@@ -1,0 +1,19 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:model="using:Supermarket.Models"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Supermarket.Views.EditTovarWindow"
+        x:CompileBindings="False"
+        Title="EditTovarWindow">
+<Grid ShowGridLines="True" RowDefinitions=".2* .1* .1*" ColumnDefinitions=".2* .2* .1*">
+        <StackPanel>
+                <Border>
+                        <StackPanel>
+                                <Image Name="Imgar" Width="200" Height="200" Source="{Binding TovarImage}"/>
+                        </StackPanel>
+                </Border>
+        </StackPanel>
+</Grid>
+</Window>
